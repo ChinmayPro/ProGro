@@ -114,6 +114,7 @@ body {
     margin: 0 auto;
     padding-left: 20px;
     background: #ccc;
+    padding-top: 100px;
 }
 .section-one .head h1, .head.sub h3 {
     color: #fff;
@@ -553,3 +554,108 @@ body {
     margin: 0 auto;
     padding-top: 30px;
 }
+.section-container-mast {
+    margin-top: 80px;
+}
+.section-wrapper {
+    padding-top: 100px;
+}
+/* know more wrappers css starts */
+.know-more-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.know-more-item {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.know-more-item .left {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding-left: 15px;
+}
+.know-more-item .right {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    padding: 10px;
+}
+.know-more-item .right img {
+    width: auto;
+    height: 150px;
+}
+.know-more-item .head h3 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+}
+.know-more-item .content p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #9198a2;
+    line-height: 1.3;
+    font-weight: 500;
+}
+.know-more-item-wrap {
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    width: 90%;
+}
+
+.know-more-item-wrap .img-wrap {
+    text-align: center;
+}
+
+.know-more-item-wrap .icon-wrap img {
+    width: 60px;
+    height: 60px;
+}
+.row-wrap .know-more-item {
+    width: 49%;
+    text-align: center;
+}
+.row-wrap .know-more-item .know-more-item-wrap {
+    width: 75%;
+}
+.row-wrap .know-more-item .head, .row-wrap .know-more-item .content  {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-wrap .know-more-item-wrap {
+    padding-top: 50px;
+    height: 330px;
+    border-radius: 20px;
+}
+.h-extra-three {
+    height: 830px;
+}
+.h-extra-five {
+    height: 900px;
+}
+.row-wrap.one {
+    width: 80%;
+}
+.row-wrap.two {
+    width: 80%;
+    margin-left: 15%;
+}
+.m-l-25 {
+    margin-left: 25%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* know more wrapper css ends */
