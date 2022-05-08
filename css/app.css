@@ -896,4 +896,46 @@ body {
     .hamburger-icon img.active {
         display: block;
     }
+    .know-more-item {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .know-more-item .left {
+        display: block;
+        width: 100%;
+    }
+    .know-more-item .right {
+        display: none;
+    } 
+    .know-more-item-wrap {
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+    .row-wrap.one {
+        width: 100%;
+    }
+    .row-wrap .know-more-item {
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .know-more-wrapper {
+        width: 100%;
+    }
+    .row-wrap .know-more-item .know-more-item-wrap {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row-wrap.two {
+        width: 100%;
+        margin-left: 0;
+    }
+    .row-wrap .know-more-item-wrap {
+        height: auto;
+    }
 }
