@@ -48,6 +48,16 @@ var app = {
         });
         $(".back-link img").on("click", function(event){
             that.knowMoreBack(event);
+        });
+        $(window).on("scroll", function(){
+            let headerElementHeight = $(".header-wrap")[0].offsetHeight;
+            if(window.scrollY > headerElementHeight) {
+                $(".header-bg").hide();
+                $(".header-bg-line").hide();
+            } else {
+                $(".header-bg").show();
+                $(".header-bg-line").show();
+            }
         })
     }
 }

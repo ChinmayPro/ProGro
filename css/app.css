@@ -1,6 +1,7 @@
 body { 
     margin: 0;
     padding: 0;
+    background: #0E1826;
 }
 .h-w {
     position: fixed;
@@ -555,7 +556,7 @@ body {
     padding-top: 30px;
 }
 .section-container-mast {
-    margin-top: 80px;
+    position: relative;
 }
 .section-wrapper {
     padding-top: 100px;
@@ -718,10 +719,9 @@ body {
 
 .video-wrap {
     position: absolute;
-    top: -50px;
+    top: -95px;
     z-index: -99;
     width: 100%;
-    border: 1px solid black;
 }
 
 .back-link {
@@ -944,6 +944,7 @@ body {
     }
     .know-more-wrapper {
         width: 100%;
+        margin-left: 0;
     }
     .row-wrap .know-more-item .know-more-item-wrap {
         width: 90%;
@@ -956,5 +957,17 @@ body {
     }
     .row-wrap .know-more-item-wrap {
         height: auto;
+    }
+    .back-link.mobile {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    .back-link span {
+        color: #9198a2;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 10px;
+        letter-spacing: 0.5px;
     }
 }
