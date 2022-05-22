@@ -11,6 +11,17 @@ var app = {
             parentNode[0].classList.add("h-extra-five");
         }
     },
+    knowMoreBack: function(event){
+        let element  = event.target;
+        let parentNode = $(element).parents(".product");
+        parentNode.find(".section-container")[0].classList.remove("hidden");
+        parentNode.find(".know-more-wrapper")[0].classList.add("hidden");
+        if(parentNode[0].classList.contains("section-three")) {
+            parentNode[0].classList.remove("h-extra-three");
+        } else if(parentNode[0].classList.contains("section-five")) {
+            parentNode[0].classList.remove("h-extra-five");
+        }
+    },
     handleHamburgerMenu: function(event){
         let openIcon = $(".hamb-icon.open-icon")[0];
         let closeIcon = $(".hamb-icon.close-icon")[0];
@@ -35,6 +46,9 @@ var app = {
         $(".hamb-icon").on("click", function(event){
             that.handleHamburgerMenu(event);
         });
+        $(".back-link img").on("click", function(event){
+            that.knowMoreBack(event);
+        })
     }
 }
 
