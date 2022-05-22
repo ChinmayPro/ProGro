@@ -476,6 +476,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.section-three {
+    background-image: url(../assets/two-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-four {
+    background-image: url(../assets/three-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-five {
+    background-image: url(../assets/four-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .product .section-container .action {
     margin-top: 15px;
 }
