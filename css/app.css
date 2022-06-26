@@ -146,9 +146,9 @@ body {
     font-weight: 400;
     letter-spacing: 0.3px;
 }
-.section-one .content-head {
+/* .section-one .content-head {
     margin-top: 70px;
-}
+} */
 .section-one .content-head h3 {
     font-size: 30px;
     color: #fff;
@@ -749,6 +749,24 @@ body {
     width: 60px;
     height: 38px;
 }
+.master-head .img-wr p, .steps-wrapp .img-wr p {
+    font-size: 120px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px red;
+    -moz-text-stroke: 1px red;
+}
+.master-head .img-wr p:hover, .steps-wrapp .img-wr p:hover {
+    font-size: 120px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px red;
+    -webkit-text-fill-color: white;
+    -moz-text-stroke: 1px red;
+    -moz-text-fill-color: white;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 767px) {
     .header-bg {
