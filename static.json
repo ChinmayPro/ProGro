@@ -1,7 +1,16 @@
 {
+<<<<<<< HEAD
   "routes": [
     {
       "path": "/**",
+=======
+  "name": "progro",
+  "root": "dist",
+  "clean_urls": true,
+  "routes": [
+    {
+      "path": "/*",
+>>>>>>> 5447ad8 (make changes in static.json file)
       "destination": "/index.html"
     }
   ]
