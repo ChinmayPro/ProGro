@@ -1,12 +1,10 @@
 {
   "name": "progro",
   "root": "dist",
-  "routes": {
-    "/**": "index.html"
-  },
-  "rewrites": [
+  "clean_urls": true,
+  "routes": [
     {
-      "source": "**",
+      "path": "/*",
       "destination": "/index.html"
     }
   ],
