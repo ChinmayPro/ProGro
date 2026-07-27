@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "routes": [
     {
       "path": "/**",
@@ -7,6 +8,8 @@
   "name": "progro",
   "root": "dist",
   "clean_urls": true,
+=======
+>>>>>>> cdd0caa (make changes in static.json)
   "routes": [
     {
       "path": "/*",
