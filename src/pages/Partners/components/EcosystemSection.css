@@ -1,0 +1,78 @@
+.chain {
+  margin-top: 36px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: clamp(22px, 3vw, 32px);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1.15fr;
+  gap: clamp(14px, 2vw, 26px);
+  align-items: center;
+  border-radius: 3px;
+}
+
+@media (max-width: 880px) {
+  .chain {
+    grid-template-columns: 1fr;
+  }
+  .chain .arw {
+    transform: rotate(90deg);
+    justify-self: start;
+  }
+}
+
+.node b {
+  font-family: Newsreader, Georgia, serif;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.node p {
+  font-size: 13.5px;
+  color: var(--mute);
+  margin: 10px 0 0;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tiles span {
+  font-size: 12px;
+  border: 1px solid var(--line);
+  padding: 4px 9px;
+  border-radius: 2px;
+  color: var(--mute);
+  background: var(--paper);
+}
+
+.node.core {
+  border: 1px solid var(--acc);
+  background: var(--accs);
+  padding: 16px;
+  border-radius: 3px;
+}
+
+.arw {
+  color: var(--faint);
+}
+
+.mdots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  max-width: 250px;
+}
+
+.mdots i {
+  width: 5px;
+  height: 5px;
+  background: #D6DAD3;
+  border-radius: 1px;
+}
+
+.mdots i.on {
+  background: var(--acc);
+}

@@ -1,0 +1,36 @@
+.pcards {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .pcards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pcard {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 24px 22px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pcard h3 {
+  font-size: 20px;
+  margin: 10px 0 12px;
+}
+
+.pcard p {
+  font-size: 14.5px;
+  color: var(--mute);
+}
+
+.pcard .go {
+  margin-top: auto;
+  padding-top: 16px;
+}

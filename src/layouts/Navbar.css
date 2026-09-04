@@ -1,0 +1,221 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(244, 244, 241, 0.95);
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-in {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 15px var(--gut);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Newsreader, serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.glyph {
+  width: 19px;
+  height: 19px;
+  flex: none;
+}
+
+.glyph rect:nth-child(1) {
+  fill: var(--ink);
+}
+
+.glyph rect:nth-child(2) {
+  fill: var(--acc);
+  opacity: 0.75;
+}
+
+.glyph rect:nth-child(3) {
+  fill: var(--acc);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--ink);
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--sand);
+}
+
+.hamburger-icon {
+  width: 22px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger-icon .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--ink);
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.nav.is-open .hamburger-icon .line-1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav.is-open .hamburger-icon .line-2 {
+  opacity: 0;
+}
+
+.nav.is-open .hamburger-icon .line-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav .nav-menu {
+  margin-left: auto;
+  display: flex;
+  gap: 26px;
+  font-size: 14.5px;
+  color: var(--mute);
+}
+
+.nav .nav-menu a {
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  color: var(--mute);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav .nav-menu a:hover {
+  color: var(--ink);
+  border-bottom-color: rgba(31, 111, 92, 0.4);
+}
+
+.nav .nav-menu a.active,
+.nav .nav-menu a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 500;
+  border-bottom: 2px solid var(--acc);
+}
+
+.ncta {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.ncta:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.mobile-ncta {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .desktop-ncta {
+    display: none;
+  }
+
+  .nav .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(244, 244, 241, 1.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    padding: 20px var(--gut);
+    gap: 14px;
+    font-size: 16px;
+    margin-left: 0;
+    z-index: 60;
+  }
+
+  .nav .nav-menu.active {
+    display: flex;
+    animation: fadeInNav 0.2s ease-out forwards;
+  }
+
+  .nav .nav-menu a {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line2);
+    width: 100%;
+    display: block;
+  }
+
+  .nav .nav-menu a.active,
+  .nav .nav-menu a[aria-current="page"] {
+    border-bottom: 1px solid var(--acc);
+    font-weight: 600;
+  }
+
+  .mobile-ncta {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    padding: 12px 20px;
+    background: var(--ink);
+    color: var(--paper) !important;
+    border-radius: 2px;
+    font-weight: 500;
+    border-bottom: none !important;
+  }
+
+  .mobile-ncta:hover {
+    background: var(--acc);
+  }
+}
+
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

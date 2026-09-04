@@ -1,0 +1,47 @@
+.price {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .price {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pc {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 26px 22px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pc.mark {
+  border-color: var(--acc);
+  background: var(--accs);
+}
+
+.pc h3 {
+  margin: 12px 0 6px;
+}
+
+.pc .fig {
+  font-family: Newsreader, serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 8px 0 12px;
+}
+
+.pc p {
+  font-size: 14.5px;
+  color: var(--mute);
+}
+
+.pc .go {
+  margin-top: auto;
+  padding-top: 16px;
+}

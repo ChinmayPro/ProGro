@@ -1,0 +1,57 @@
+.faq {
+  margin-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.item {
+  border-bottom: 1px solid var(--line);
+}
+
+.ibtn {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  text-align: left;
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  color: inherit;
+}
+
+.iq {
+  font-family: Newsreader, serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 500;
+}
+
+.ibtn .pl {
+  margin-left: auto;
+  color: var(--faint);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.item[data-open="true"] .pl {
+  color: var(--acc);
+}
+
+.ia {
+  display: none;
+  padding: 0 0 22px;
+  max-width: 70ch;
+  font-size: 15.5px;
+  color: var(--mute);
+}
+
+.item[data-open="true"] .ia {
+  display: block;
+}
+
+.ia .src {
+  display: block;
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: var(--faint);
+}

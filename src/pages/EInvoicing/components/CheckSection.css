@@ -1,0 +1,60 @@
+.check {
+  margin-top: 34px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 3px;
+  padding: 24px;
+}
+
+.ck {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line2);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.ck:first-of-type {
+  border-top: 0;
+}
+
+.ck input {
+  margin-top: 5px;
+  accent-color: var(--acc);
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.ck span {
+  font-size: 15.5px;
+}
+
+.ck small {
+  display: block;
+  color: var(--mute);
+  font-size: 13.5px;
+  margin-top: 3px;
+}
+
+.score {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.score b {
+  font-family: Newsreader, serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.score span {
+  font-size: 14.5px;
+  color: var(--mute);
+}

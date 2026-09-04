@@ -1,0 +1,6 @@
+#close .acts {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

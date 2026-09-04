@@ -1,0 +1,46 @@
+.rules {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .rules {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .rules {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rule {
+  background: var(--paper);
+  padding: 22px 18px;
+}
+
+.rule .n {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--acc);
+  letter-spacing: .12em;
+}
+
+.rule b {
+  font-family: Newsreader, serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin: 12px 0 8px;
+}
+
+.rule p {
+  font-size: 13.5px;
+  color: var(--mute);
+  margin: 0;
+}

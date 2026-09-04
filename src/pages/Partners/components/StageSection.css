@@ -1,0 +1,6 @@
+#stage .acts {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

@@ -1,0 +1,92 @@
+footer {
+  background: var(--ink);
+  color: #9FB0B4;
+  padding: clamp(50px, 6vw, 80px) 0 40px;
+  font-size: 14.5px;
+}
+
+.fgrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 960px) {
+  .fgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .fgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .fgrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fgrid h4 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #6F8288;
+  margin: 0 0 15px;
+  font-weight: 500;
+}
+
+.fgrid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fgrid li {
+  margin-bottom: 10px;
+}
+
+.fgrid a {
+  text-decoration: none;
+}
+
+.fgrid a:hover {
+  color: #fff;
+}
+
+.fbrand .brand {
+  color: #F4F4F1;
+  margin-bottom: 14px;
+}
+
+.fbrand .glyph rect:nth-child(1) {
+  fill: #F4F4F1;
+}
+
+.fbrand .glyph rect:nth-child(2) {
+  fill: #7FB6A6;
+}
+
+.fbrand .glyph rect:nth-child(3) {
+  fill: #7FB6A6;
+}
+
+.fbrand p {
+  max-width: 32ch;
+  font-size: 14px;
+}
+
+.legal {
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid #2A3C44;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: #6F8288;
+}

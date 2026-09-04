@@ -1,0 +1,147 @@
+.funnel {
+  margin-top: 36px;
+}
+
+.fn {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line2);
+}
+
+.fn:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.fn .num {
+  font-family: Newsreader, Georgia, serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.fn .b {
+  height: 9px;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 8px;
+  background: var(--faint);
+}
+
+.fn1 .b {
+  width: 100%;
+  background: #B7C0BE;
+}
+
+.fn2 .b {
+  width: 77%;
+  background: #8FA9A2;
+}
+
+.fn3 .b {
+  width: 23%;
+  background: var(--acc);
+}
+
+.fn4 .b {
+  width: 16%;
+  background: var(--sand);
+}
+
+.fn4 .num {
+  color: var(--sand);
+}
+
+.fn .t {
+  font-size: 15px;
+  display: block;
+}
+
+.fn .s {
+  font-size: 12.5px;
+  color: var(--faint);
+  display: block;
+  margin-top: 3px;
+}
+
+.split {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(28px, 4vw, 54px);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-bottom: 16px;
+}
+
+.dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background: #D6DAD3;
+}
+
+.dots i.on {
+  background: var(--acc);
+}
+
+.cap {
+  font-size: 13.5px;
+  color: var(--mute);
+  max-width: 54ch;
+}
+
+.cap + .cap {
+  margin-top: 18px;
+}
+
+.sb {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr) 50px;
+  gap: 16px;
+  align-items: center;
+  font-size: 15px;
+  padding: 9px 0;
+}
+
+@media (max-width: 620px) {
+  .sb {
+    grid-template-columns: 140px minmax(0, 1fr) 44px;
+    font-size: 13.5px;
+  }
+}
+
+.sb .tr {
+  height: 8px;
+  background: #E6E9E2;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sb .tr i {
+  display: block;
+  height: 100%;
+  background: var(--acc);
+  border-radius: 2px;
+}
+
+.sb.low .tr i {
+  background: var(--sand);
+}
+
+.sb b {
+  text-align: right;
+  font-weight: 600;
+}
